@@ -1,0 +1,41 @@
+<h1>Pastry Party!</h1>
+<h3>For a Pastry Picnicker</h3>
+
+<img src="../public/assets/img/cheesecake-2982634_960_720.png" alt="cheesecake img">
+
+<div>
+    <form>
+        <div>
+            <label for="name">Name of Pastry: </label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div>
+            <label for="eaten">Did you eat it?</label>
+            <input type="radio" name="eaten" value="1" checked>Yeah... I did. <br>
+            <input type="radio" name="eaten" value="0"> Not Yet!
+        </div>
+        <button type="submit">Add Pastry</button>
+    </form>
+</div>
+
+<div>
+    <h2>Pastries Added</h2>
+    <ul>
+        {{#each shelf}}
+        {{#if eaten}}
+        {{> pastry-block eaten=false}}
+        {{/if}}
+        {{/each}}
+    </ul>
+</div>
+
+<div>
+    <h2>Pastries Eaten</h2>
+    <ul>
+        {{#each cats}}
+        {{#unless sleepy}}
+        {{> pastry-block eaten=true}}
+        {{/unless}}
+        {{/each}}
+    </ul>
+</div>
