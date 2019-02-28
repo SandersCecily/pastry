@@ -1,9 +1,9 @@
 <h1>Pastry Party!</h1>
 <h3>For a Pastry Picnicker</h3>
 
-<img src="" alt="cheesecake img" class="img">
+<img src="/assets/img/cake.png" alt="cheesecake img" class="img">
 
-<div>
+<div id="formdiv">
     <form id="form">
         <div>
             <label for="name">Name of Pastry: </label>
@@ -13,7 +13,7 @@
     </form>
 </div>
 
-<div>
+<div id="uneaten">
     <h2>Pastries Added</h2>
     <ul>
         {{#each shelf}}
@@ -24,7 +24,7 @@
     </ul>
 </div>
 
-<div>
+<div id="eaten">
     <h2>Pastries Eaten</h2>
     <ul>
         {{#each shelf}}

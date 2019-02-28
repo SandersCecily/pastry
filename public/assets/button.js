@@ -1,6 +1,5 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
-  $(".img").attr("src","/img/cake.png");
     $(".change-eaten").on("click", function(event) {
       var id = $(this).data("id");
       var eatentoggle = $(this).data("eaten");

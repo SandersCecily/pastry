@@ -16,6 +16,8 @@ app.set("view engine", "handlebars");
 
 var routes = require("./controllers/pastry_controllers.js");
 
+app.use(express.static("/public/assets/img")); 
+
 app.use(routes);
 
 // Start our server so that it can begin listening to client requests.
