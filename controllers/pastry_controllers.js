@@ -7,7 +7,6 @@ router.get("/", function(req, res) {
     var hbsObject = {
       shelf: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
   });
 });
