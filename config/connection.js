@@ -11,7 +11,7 @@ if (process.env.JAWSDB_URL){
     password: "anime909",
     database: "pastrydb"
   });
-}
+};
 
 connection.connect(function(err) {
   if (err) {

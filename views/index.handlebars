@@ -3,18 +3,10 @@
 
 <img src="/assets/img/cake.png" alt="cheesecake img" class="img">
 
-<div id="formdiv">
-    <form id="form">
-        <div>
-            <label for="name">Name of Pastry: </label>
-            <input type="text" id="name" name="name">
-        </div>
-        <button type="submit" class="submit">Add Pastry</button>
-    </form>
-</div>
-
-<div id="uneaten">
+<div id="contain">
+<div id="uneaten" class="left">
     <h2>Pastries Added</h2>
+    <hr>
     <ul>
         {{#each shelf}}
         {{#unless eaten}}
@@ -24,8 +16,19 @@
     </ul>
 </div>
 
-<div id="eaten">
+<div id="formdiv" class="left">
+    <form id="form">
+        <div>
+            <label for="name">Name of Pastry: </label>
+            <input type="text" id="name" name="name">
+        </div>
+        <button type="submit" class="submit">Add Pastry</button>
+    </form>
+</div>
+
+<div id="eaten" class="left">
     <h2>Pastries Eaten</h2>
+    <hr>
     <ul>
         {{#each shelf}}
         {{#if eaten}}
@@ -33,4 +36,5 @@
         {{/if}}
         {{/each}}
     </ul>
+</div>
 </div>

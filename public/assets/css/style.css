@@ -5,6 +5,20 @@ body{
 h1, h3{
     text-align: center;
 }
+
+ul, li {
+    padding: 1.75%;
+}
+
+button {
+    border-radius: 50%;
+    padding: 3%;
+    color: #f13441;
+    background-color: #f98b90;
+    border-color: #f98b90;
+    font-size: 75%;
+}
+
 .img {
     width: 25%;
     height: auto;
@@ -13,10 +27,26 @@ h1, h3{
     margin-right: auto;
 }
 
-#eaten{
-
+.left {
+    float: left;
+    margin: 1.5%;
+    align-content: center;
+    width: 30%;
 }
 
-#uneaten {
+#eaten, #uneaten{
+    overflow: auto;
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    border-right-color: #956637;
+    border-left-color: #956637;
+    border-bottom-color: #00aae8;
+    border-top-color: #00aae8;
+    padding: 2%;
+}
 
+#eaten button #uneaten button {
+    font-size: 85%;
 }
