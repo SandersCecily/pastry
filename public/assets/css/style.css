@@ -17,7 +17,16 @@ button {
     background-color: #f98b90;
     border-color: #f98b90;
     font-size: 75%;
+    box-shadow: 0 4px rgb(197,197,185);
+    margin-left: 4%;
+    margin-top: 1%;
 }
+
+input[type=text] {
+    border: none;
+    border-bottom: 3px solid rgb(0,170,232);
+    background-color: rgb(249,247,128, .3);
+  }
 
 .img {
     width: 25%;
@@ -25,6 +34,13 @@ button {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.submit{
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 3%;
 }
 
 .left {
