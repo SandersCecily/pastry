@@ -1,5 +1,6 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 $(function() {
+  $(".img").attr("src","/img/cake.png");
     $(".change-eaten").on("click", function(event) {
       var id = $(this).data("id");
       var eatentoggle = $(this).data("eaten");
@@ -37,21 +38,6 @@ $(function() {
       }).then(
         function() {
           console.log("created new pastry");
-          // Reload the page to get the updated list
-          location.reload();
-        }
-      );
-    });
-  
-    $(".delete-pastry").on("click", function(event) {
-      var id = $(this).data("id");
-  
-      // Send the DELETE request.
-      $.ajax("/api/shelf/" + id, {
-        type: "DELETE"
-      }).then(
-        function() {
-          console.log("deleted pastry ", id);
           // Reload the page to get the updated list
           location.reload();
         }

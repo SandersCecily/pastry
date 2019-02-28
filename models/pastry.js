@@ -6,7 +6,6 @@ var pastry = {
           cb(res);
         });
       },
-      // The variables cols and vals are arrays.
       create: function(cols, vals, cb) {
         orm.create("shelf", cols, vals, function(res) {
           cb(res);
@@ -17,11 +16,6 @@ var pastry = {
           cb(res);
         });
       },
-      delete: function(condition, cb) {
-        orm.delete("shelf", condition, function(res) {
-          cb(res);
-        });
-      }
 };
 
 module.exports = pastry;
